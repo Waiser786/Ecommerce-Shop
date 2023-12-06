@@ -1,0 +1,109 @@
+<products>
+  <!-- Recommended Products -->
+  <product>
+    <name>Baby Bear Pajamas</name>
+    <price>Rs300</price>
+    <availability>in_stock</availability>
+  </product>
+  <product>
+    <name>Baby Pajamas</name>
+    <price>Rs200</price>
+    <availability>out_of_stock</availability>
+  </product>
+  <product>
+    <name>Baby Girl Pajamas</name>
+    <price>Rs150</price>
+    <availability>in_stock</availability>
+  </product>
+  <product>
+    <name>Girl Romper suit</name>
+    <price>Rs199</price>
+    <availability>out_of_stock</availability>
+  </product>
+  
+  <!-- Latest Products -->
+  <product>
+    <name>Baby body suit</name>
+    <price>Rs200</price>
+    <availability>in_stock</availability>
+  </product>
+  <product>
+    <name>Brown summer T-shirt</name>
+    <price>Rs500</price>
+    <availability>out_of_stock</availability>
+  </product>
+  <product>
+    <name>Toddler Cardigan Dress</name>
+    <price>Rs600</price>
+    <availability>in_stock</availability>
+  </product>
+  <product>
+    <name>Carter's cardigan dress</name>
+    <price>Rs600</price>
+    <availability>out_of_stock</availability>
+  </product>
+  
+  <!-- Best Sellers -->
+  <product>
+    <name>Blue Gymboree Overall</name>
+    <price>Rs400</price>
+    <availability>in_stock</availability>
+  </product>
+  <product>
+    <name>Boy blue romper suit</name>
+    <price>Rs300</price>
+    <availability>out_of_stock</availability>
+  </product>
+  <product>
+    <name>Blue onesie</name>
+    <price>Rs300</price>
+    <availability>in_stock</availability>
+  </product>
+  <product>
+    <name>Boy set</name>
+    <price>Rs999</price>
+    <availability>out_of_stock</availability>
+  </product>
+  <product>
+    <name>Blue boy set</name>
+    <price>Rs999</price>
+    <availability>in_stock</availability>
+  </product>
+  <product>
+    <name>Toddler boy set</name>
+    <price>Rs1000</price>
+    <availability>out_of_stock</availability>
+  </product>
+  <product>
+    <name>T-shirt set</name>
+    <price>Rs800</price>
+    <availability>in_stock</availability>
+  </product>
+  <product>
+    <name>Boy Set</name>
+    <price>Rs1100</price>
+    <availability>out_of_stock</availability>
+  </product>
+  
+  <!-- Sales -->
+  <product>
+    <name>Chill Summer suit</name>
+    <price>Rs700</price>
+    <availability>in_stock</availability>
+  </product>
+  <product>
+    <name>Girl Party Dress</name>
+    <price>Rs900</price>
+    <availability>out_of_stock</availability>
+  </product>
+  <product>
+    <name>Girl One Piece</name>
+    <price>Rs300</price>
+    <availability>in_stock</availability>
+  </product>
+  <product>
+    <name>Unisex winter suit</name>
+    <price>Rs800</price>
+    <availability>out_of_stock</availability>
+  </product>
+</products>

@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="du">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- ----------main style------------ -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.0.0-beta3/css/all.min.css">
+
+      <!-- ------------Google Fonts-------------- -->
+      <link href="https://fonts.googleapis.com/css2?family=Recursive:wght@300;400;500;600;700&display=swap"
+         rel="stylesheet">
+      <!-- --------------Icon pack font-awesome----------- -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <!-- --------------------Google Maps Api---------------- -->
+      <script defer
+         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCl7F3URup7S4Of3R3cJQLk535vNnUQRzg&callback=initMap"></script>
+      <script src="script.js"></script>
+      <title>Ibaby Clothing | Dress them like royals </title>
+   </head>
+   <body>
+      <div class="header">
+         <div class="container">
+            <div class="navbar">
+               <div class="logo">
+                  <img src="images/logo.png" alt="logo-image" width="150px" height="150px">
+               </div>
+               <nav>
+                  <ul id="menu-items">
+                     <li><a href="">Home</a></li>
+                     <li><a href="index2.html">Other Products</a></li>
+                     <li><a href="contact.html">Contact</a></li>
+                     <li><a href="register.html">Account</a></li>
+                  </ul>
+               </nav>
+               <img src="images/cart.png" alt="cart" width="30px" height="30px" class="cart-img">
+               <img src="images/menu.png" alt="menu" width="30px" height="30px" class="menu-icon" onclick="menutoggle()">
+            </div>
+            
+         </div>
+      </div>
+      
+      <div class="container">
+         <div class="row1">
+            <input type="text" class="search-bar" id="search" placeholder="Search products" />
+            <ul id="suggestions"></ul>
+         </div>
+      </div>
+
+      <div class="row">
+               <div class="col-md-6 ">
+                  <h1 class="some-black-text">Great deals happening <br> Right Now!</h1>
+                  <p class="some-black-text">Enjoy a safe, convenient shopping experience</p>
+                  <p class="some-black-text">Shop stress-free from home. We’re ready to help, online or by phone.</p>
+               </div>
+               <div class="col-md-6">
+                  <img src="images/banner.png" alt="banner-image" class="center">
+               </div>
+      </div>
+      <!-- featured products -->
+      <div class="small-container mt-5">
+         <h2 class="title">Recommended Products</h2>
+         <div class="row horizontal-scroll-wrapper squares">
+            <div class="col-4 box-container">
+               <div class="image-overlay"></div>
+               <img src="images/bearpajamas.png" alt="Bear Pajamas">
+               <h5 class="product_name">Baby bear Pajamas</h5>
+               <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-o"></i>
+               </div>
+               <div class="content-details fadeIn-bottom">
+                  <h3 class="content-title">Baby bear Pajamas</h3>
+                  <h4 class="content-price">Rs300</h4>
+                  <h4><a href="product1light.html">View more</a></h4>
+                  <div class="content-btn btn btn-secondary" title="Add to Cart"><i class="fa fa-cart-plus" aria-hidden="true"></i></div>
+               </div>
+               <p class="price_name" >Rs300</p>
+               <!-- <div class="btn btn-secondary" title="Preview Item"><i class="fa fa-cart-plus" aria-hidden="true"></i>
+                  </div> -->
+            </div>
+            <div class="col-4 box-container">
+               <div class="image-overlay"></div>
+               <img src="images/pajamas.png" alt="night wear">
+               <h5 class="product_name">baby pajamas</h5>
+               <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-o"></i>
+                  <i class="fa fa-star-o"></i>
+               </div>
+               <div class="content-details fadeIn-bottom">
+                        <h3 class="content-title">baby pajamas</h3>
+                        <h4 class="content-price">Rs200</h4>
+                        <div class="content-btn btn btn-secondary" title="Add to Cart"><i class="fa fa-cart-plus" aria-hidden="true"></i></div>
+               </div>
+               <p class="price_name" >Rs200</p>
+            </div>
+            <div class="col-4 box-container">
+               <div class="image-overlay"></div>
+               <img src="images/pajamagirl.png" alt="girl pajamas">
+               <h5 class="product_name">Baby Girl Pajamas</h5>
+               <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+               </div>
+               <div class="content-details fadeIn-bottom">
+                        <h3 class="content-title">Baby Girl Pajamas</h3>
+                        <h4 class="content-price">Rs150</h4>
+                        <div class="content-btn btn btn-secondary" title="Add to Cart"><i class="fa fa-cart-plus" aria-hidden="true"></i></div>
+               </div>
+               <p class="price_name" >Rs150</p>
+            </div>
+            <div class="col-4 box-container">
+               <div class="image-overlay"></div>
+               <img src="images/rompersuit.png" alt="romper suit">
+               <h5 class="product_name">Girl Romper suit</h5>
+               <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-o"></i>
+               </div>
+               <div class="content-details fadeIn-bottom">
+                        <h3 class="content-title">Girl Romper suit</h3>
+                        <h4 class="content-price">Rs199</h4>
+                        <div class="content-btn btn btn-secondary" title="Add to Cart"><i class="fa fa-cart-plus" aria-hidden="true"></i></div>
+               </div>
+               <p class="price_name" >Rs199</p>
+            </div>
+         </div>
+         <!-- Latest products -->
+         <h2 class="title">Latest Products</h2>
+         <div class="row">
+            <div class="col-4 box-container">
+               <img src="images/babybodysuit.png" alt="baby suit">
+               <h5 class="product_name">Baby body suit</h5>
+               <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-o"></i>
+               </div>
+               <p class="price_name" >Rs200</p>
+            </div>
+            <div class="col-4 box-container">
+               <img src="images/brownsummer.png" alt="summershirt">
+               <h5 class="product_name">Brown summer T-shirt</h5>
+               <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-half-o"></i>
+                  <i class="fa fa-star-o"></i>
+               </div>
+               <p class="price_name" >Rs500</p>
+            </div>
+            <div class="col-4 box-container">
+               <img src="images/cardigandress.png" alt="dress">
+               <h5 class="product_name">Toddler Cardigan Dress</h5>
+               <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+               </div>
+               <p class="price_name" >Rs600</p>
+            </div>
+            <div class="col-4 box-container">
+               <img src="images/cartercardigandress.png" alt="dress">
+               <h5 class="product_name">Carter's cardigan dress</h5>
+               <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-half-o"></i>
+               </div>
+               <p class="price_name" >Rs600</p>
+            </div>
+         </div>
+         <h2 class="title">Best Sellers</h2>
+         <div class="row">
+            <div class="col-4 box-container">
+               <img src="images/gymboreeoverall.png" alt="overall">
+               <h5 class="product_name">Blue Gymboree Overall</h5>
+               <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-o"></i>
+               </div>
+               <p class="price_name" >Rs400</p>
+            </div>
+            <div class="col-4 box-container">
+               <img src="images/rompersuitboy.png" alt="rompersuit">
+               <h5 class="product_name">Boy blue romper suit</h5>
+               <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-o"></i>
+               </div>
+               <p class="price_name" >Rs300</p>
+            </div>
+            <div class="col-4 box-container">
+               <img src="images/onesie.png" alt="onesie">
+               <h5 class="product_name">Blue onesie</h5>
+               <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-o"></i>
+               </div>
+               <p class="price_name" >Rs300</p>
+            </div>
+            <div class="col-4 box-container">
+               <img src="images/boyset.jfif" alt="boyset">
+               <h5 class="product_name">Boy set</h5>
+               <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-o"></i>
+               </div>
+               <p class="price_name" >Rs999</p>
+            </div>
+            <div class="col-4 box-container">
+               <img src="images/boyset2.jpg" alt="boyset2">
+               <h5 class="product_name">Blue boy set</h5>
+               <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-half-o"></i>
+               </div>
+               <p class="price_name" >Rs999</p>
+            </div>
+            <div class="col-4 box-container">
+               <img src="images/boyset3.webp" alt="boyset3">
+               <h5 class="product_name">Toddler boy set</h5>
+               <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-half-o"></i>
+                  <i class="fa fa-star-o"></i>
+               </div>
+               <p class="price_name" >Rs1000</p>
+            </div>
+            <div class="col-4 box-container">
+               <img src="images/boyset4.webp" alt="boyset4"
+               <h5 class="product_name">T-shirt set</h5>
+               <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-o"></i>
+               </div>
+               <p class="price_name" >Rs800</p>
+            </div>
+            <div class="col-4 box-container">
+               <img src="images/boyset5.webp" alt="boyset5">
+               <h5 class="product_name">Boy Set</h5>
+               <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-o"></i>
+               </div>
+               <p class="price_name" >Rs1100</p>
+            </div>
+         </div>
+         <h2 class="title">Sales</h2>
+         <div class="row">
+            <div class="col-4 box-container">
+               <img src="images/chillsummersuit.png" alt="chillsummersuit">
+               <h5 class="product_name">Chill Summer suit</h5>
+               <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-o"></i>
+               </div>
+               <p class="price_name" >Rs700</p>
+            </div>
+            <div class="col-4 box-container">
+               <img src="images/girlpartydress.png" alt="partygirldress">
+               <h5 class="product_name">Girl Party Dress</h5>
+               <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-half-o"></i>
+                  <i class="fa fa-star-o"></i>
+               </div>
+               <p class="price_name" >Rs900</p>
+            </div>
+            <div class="col-4 box-container">
+               <img src="images/onepiece.png" alt="girl-onepiece">
+               <h5 class="product_name">Girl One Piece</h5>
+               <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-o"></i>
+               </div>
+               <p class="price_name" >Rs300</p>
+            </div>
+            <div class="col-4 box-container">
+               <img src="images/unisexwinter.jpg" alt="wintersuit">
+               <h5 class="product_name">unisex winter suit</h5>
+               <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-o"></i>
+               </div>
+               <p class="price_name" >Rs800</p>
+            </div>
+         </div>
+      </div>
+      </div>
+      <!-- offer -->
+      <div class="offer">
+         <div class="small-container">
+            <div class="row">
+               <div class="col-6">
+                  <img src="images/toy2.png" class="offer-img">
+               </div>
+               <div class="col-6 text-data text-white">
+                  <p>Now launching our Toddler toys</p>
+                  <h1>50% off for first 50 customers</h1>
+                  <a href="" class="btn">Buy Now &#8594</a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="locate">
+         <div class="small-container">
+            <div class="row">
+               <div class="col-2">
+                  <h3>Our Shop Location</h3>
+                  <div id="map"></div>
+               </div>
+               <div class="col-2">
+               </div>
+            </div>
+         </div>
+      </div>
+    
+      
+      <!-- brands -->
+      <div class="brands">
+         <div class="small-container">
+            <div class="row">
+               <div class="col-3">
+                  <img src="images/mastercard_PNG7.png" alt="mastercard logo">
+               </div>
+               <div class="col-3">
+                  <img src="images/paypal_PNG19.png" alt="mastercard logo">
+               </div>
+            </div>
+         </div>
+         <!-- -------footer------ -->
+         
+      </div>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDiI9nz3OkArqqyQNm3vOETw_oxRstRBEU"></script>
+      <script src="main.js"></script>
+      <!--Load the API from the specified URL
+         * The async attribute allows the browser to render the page while the API loads
+         * The callback parameter executes the initMap() function
+         -->
+   </body>
+</html>
